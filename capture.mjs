@@ -40,7 +40,8 @@ const CARDS = [
   { sel: '.c7',    name: '10-moav' },
   { sel: '.c8-v2', name: '11-moav' },
   { sel: '.c9',    name: '12-moav' },
-  { sel: '.c10',   name: '13-moav' },
+  { sel: '.cREV',  name: '13-moav' },
+  { sel: '.c10',   name: '14-moav' },
 ];
 
 async function main() {

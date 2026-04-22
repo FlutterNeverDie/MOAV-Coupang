@@ -2230,3 +2230,179 @@ body {
 .c8-v2 .bottom-note .r {
   color: var(--ink);
 }
+
+/* ===== CARD 13 — REVIEW ===== */
+.cREV {
+  background: #F4F6FA;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 배경 장식 */
+.cREV::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(30,94,255,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* 헤더 */
+.cREV .rev-header {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.cREV .rev-eyebrow {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  color: var(--blue);
+}
+
+.cREV .rev-heading {
+  font-family: 'Pretendard Variable', 'Pretendard', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.03em;
+}
+
+.cREV .rev-summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.cREV .rev-score {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 15px;
+  color: #E8920A;
+  letter-spacing: -0.01em;
+}
+
+.cREV .rev-count {
+  font-family: 'Pretendard Variable', 'Pretendard', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-500);
+}
+
+.cREV .rev-badge {
+  font-family: 'Pretendard Variable', 'Pretendard', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: #1DA25A;
+  background: rgba(29,162,90,0.1);
+  border-radius: 20px;
+  padding: 3px 9px;
+  letter-spacing: 0;
+}
+
+/* 그리드 */
+.cREV .rev-grid {
+  position: absolute;
+  top: 178px;
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+/* 개별 카드 */
+.rev-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(10,15,20,0.08), 0 0 0 1px rgba(10,15,20,0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 이미지 영역 */
+.rev-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  flex-shrink: 0;
+}
+
+.rev-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 구매확정 배지 */
+.rev-verified {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: 'Pretendard Variable', 'Pretendard', sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #fff;
+  background: #1DA25A;
+  border-radius: 6px;
+  padding: 3px 7px;
+  letter-spacing: 0;
+}
+
+/* 텍스트 바디 */
+.rev-body {
+  padding: 11px 13px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1;
+}
+
+.rev-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rev-stars {
+  font-size: 11px;
+  color: #F5A623;
+  letter-spacing: 1.5px;
+  flex-shrink: 0;
+}
+
+.rev-id {
+  font-family: 'Pretendard Variable', 'Pretendard', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.rev-date {
+  font-family: 'Pretendard Variable', 'Pretendard', sans-serif;
+  font-size: 10px;
+  color: var(--gray-500);
+  margin-left: auto;
+}
+
+.rev-text {
+  font-family: 'Pretendard Variable', 'Pretendard', sans-serif;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #3A424F;
+  line-height: 1.6;
+  word-break: keep-all;
+}
