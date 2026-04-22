@@ -237,8 +237,8 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding: 14px 18px;
+  gap: 6px;
+  padding: 18px 24px;
   background: rgba(10, 15, 20, 0.55);
   border: 1px solid rgba(30, 94, 255, 0.4);
   backdrop-filter: blur(10px);
@@ -258,7 +258,7 @@ body {
 .c1 .chip-l .k,
 .c1 .chip-r .k {
   font-family: 'Archivo Black', sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.3em;
   color: var(--blue);
 }
@@ -266,7 +266,7 @@ body {
 .c1 .chip-l .v,
 .c1 .chip-r .v {
   font-family: 'Archivo Black', sans-serif;
-  font-size: 20px;
+  font-size: 32px;
   color: #fff;
   letter-spacing: 0.04em;
 }
